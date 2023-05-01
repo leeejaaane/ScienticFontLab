@@ -4,20 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="asset/pasta.png" alt="Pasta" style="width:300px;height:300px;">
-          </div>
-          <div class="flip-card-back">
-            <h1>Pasta</h1> 
-            <p>Stacking some pieces of long black penne pasta as alphabets</p> 
-          </div>
+
+  <div class="title">BALLOON</div>
+  <div class="words">
+    <span id="word1" class="shake-slow shake-constant">Hive</span>
+  </div>
+  <div id="demo-text" contenteditable="true">Balloons
+    Since Christmas they have lived with us,
+    Guileless and clear,
+    Oval soul-animals,
+    Taking up half the space,
+    Moving and rubbing on the silk
+  </div>
+  <main class="container">
+    <div>
+      <h1 class="demo-text">Hello</h1>
+    </div>
+    <div class="controls">
+      <!-- Weight Controls -->
+      <div class="slider-container">
+        <input type="range" min="0" max="100" value="0" class="slider" id="text-weight" name="text-weight" data-index="0">
+        <div class="slider-controls">
+          <label for="text-weight" class="slider-label">
+            Weight: <span class="output" data-index="0"></span>   
+          </label>
+          <button class="button" data-index="0">
+            Reset
+          </button>
         </div>
       </div>
+      <!-- Width Controls -->
+      <div class="slider-container">
+        <input type="range" min="75" max="100" value="10" class="slider" id="text-width" name="text-width" data-index="1">
+        <div class="slider-controls">
+          <label for="text-width" class="slider-label">
+            Width: <span class="output" data-index="1"></span>  
+          </label>
+          <button class="button" data-index="1">
+            Reset
+          </button>
+        </div>
+      </div>
+      <!-- Slant Controls -->
+      <div class="slider-container">
+        <input type="range" min="0" max="12" value="0" class="slider" id="text-slant" name="text-slant" data-index="2">
+        <div class="slider-controls">
+          <label for="text-slant" class="slider-label">
+            Slant: <span class="output" data-index="2"></span>  
+          </label>
+          <button class="button" data-index="2">
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="asset/pasta.png" alt="Pasta" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Pasta</h1> 
+          <p>Stacking some pieces of long black penne pasta as alphabets</p> 
+        </div>
+      </div>
+    </div>
 </body>
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </html>
