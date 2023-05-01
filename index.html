@@ -63,9 +63,9 @@
 </head>
 <script>
 
-var items = ["Balloon", "Sote", "Pasta", "Dancing Bee", "Lumpy", "Glyphgraph"];
+var items = ["Balloon", "Dancing Bee", "Glyphgraph", "Lumpy", "Pasta", "Sote"];
 /* document.write(random_item(items)); */
-var font = './font1.html';
+var font = ['./ballon.html', './dancing bee.html', './glyphgraph.html', './lumpy.html', './pasta.html', './sote.html'];
 var about = './about.html';
 
 function random_item(items)
@@ -76,9 +76,9 @@ function random_item(items)
      
 }
 
-function fontPage()
+function fontPage(i)
 {
-    location.href = font;
+    location.href = font[i];
 }
 
 function aboutPage() {
@@ -109,12 +109,12 @@ function innerSample1() {
 </div>
 <form>
     <input type="button" class="clickbtn" value="click me!" onClick="aboutPage();">
-    <span id="test1" class="font" onclick="fontPage()"></span>
-    <span id="test2" class="font" onclick="fontPage()"></span>
-    <span id="test3" class="font" onclick="fontPage()"></span>
-    <span id="test4" class="font" onclick="fontPage()"></span>
+    <span id="test1" class="font" onclick="fontPage(i)"></span>
+    <span id="test2" class="font" onclick="fontPage(i)"></span>
+    <span id="test3" class="font" onclick="fontPage(i)"></span>
+    <span id="test4" class="font" onclick="fontPage(i)"></span>
     <br/>  
-    
+
     
     <div id="footer">
         <input type="button" class = "circle" value="shuffle" onClick="innerSample1();">
