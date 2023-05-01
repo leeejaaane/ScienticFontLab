@@ -1,9 +1,4 @@
-@font-face{
-  font-family:"balloon";
-  src:url("./asset/font/balloonVF.ttf") format("truetype");
-  font-stretch: 75% 100%;
-  font-style: oblique 0deg 12deg;
-  font-weight: 0 900;}
+
 *{
   margin: 0;
 }
@@ -17,7 +12,7 @@
 }
 
 html{
-    font-family: "balloon";
+    font-family: "Balloon";
 }
 
 .title {
@@ -106,7 +101,7 @@ p {
 }
 
 .container {
-  font-family: "balloon";
+  font-family: "Balloon";
   margin: 0 auto;
   max-width: 60rem;
   padding: 3rem;
